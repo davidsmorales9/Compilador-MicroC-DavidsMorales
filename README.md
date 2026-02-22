@@ -108,16 +108,6 @@ git clone https://github.com/davidsmorales9/Compilador-MicroC-DavidsMorales.git
 
 
 
-### Menú File
-
-![Menu](docs/Fmenu.png)
-
-
-
-### Edición Habilitada
-
-![Edición](docs/Enable.png)
-
 
 
 ### Salir
