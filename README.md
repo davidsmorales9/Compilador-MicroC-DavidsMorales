@@ -110,13 +110,13 @@ git clone https://github.com/davidsmorales9/Compilador-MicroC-DavidsMorales.git
 
 ### Menú File
 
-![Menu File](docs/FileMenu.png)
+![Menu File](docs/Fmenu.png)
 
 
 
 ### Edición Habilitada
 
-![Edición Habilitada](docs/EnableEditing.png)
+![Edición Habilitada](docs/Enable.png)
 
 
 
