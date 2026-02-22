@@ -1,18 +1,18 @@
-\# PRE-COMPILADOR MicroC
+# PRE-COMPILADOR MicroC
 
 
 
-\## Información del Estudiante
+## Información del Estudiante
 
 
 
-\*\*Nombre:\*\* Davids Morales  
+**Nombre:** Davids Morales  
 
-\*\*Carné:\*\* 202425503  
+**Carné:** 202425503  
 
-\*\*Curso:\*\* Autómatas y Lenguajes  
+**Curso:** Autómatas y Lenguajes  
 
-\*\*Proyecto:\*\* Compilador MicroC  
+**Proyecto:** Compilador MicroC  
 
 
 
@@ -20,7 +20,7 @@
 
 
 
-\## Descripción del Proyecto
+## Descripción del Proyecto
 
 
 
@@ -36,31 +36,11 @@ Entre las funcionalidades implementadas se encuentran:
 
 
 
-\- Apertura y guardado de archivos (.c)
+- Apertura y guardado de archivos (.c)
 
-\- Bloqueo y desbloqueo de edición
+- Bloqueo y desbloqueo de edición
 
-\- Interfaz gráfica amigable para el usuario
-
-
-
----
-
-
-
-\## Tecnologías Utilizadas
-
-
-
-\- C#
-
-\- .NET Framework
-
-\- Windows Forms
-
-\- Visual Studio 2022
-
-\- Git y GitHub
+- Interfaz gráfica amigable para el usuario
 
 
 
@@ -68,61 +48,43 @@ Entre las funcionalidades implementadas se encuentran:
 
 
 
-\## Instrucciones de Ejecución
+## Tecnologías Utilizadas
 
 
 
-1\. Clonar el repositorio:
+- C#
+
+- .NET Framework
+
+- Windows Forms
+
+- Visual Studio 2022
+
+- Git y GitHub
+
+
+
+---
+
+
+
+## Instrucciones de Ejecución
+
+
+
+1. Clonar el repositorio:
 
 git clone https://github.com/davidsmorales9/Compilador-MicroC-DavidsMorales.git
 
 ---
 
-2\. Abrir el archivo `.sln` ubicado en la carpeta `/src`.
+2. Abrir el archivo `.sln` ubicado en la carpeta `/src`.
 
-3\. Ejecutar el proyecto desde Visual Studio 2022.
+3. Ejecutar el proyecto desde Visual Studio 2022.
 
-4\. Presionar el ejecutable MicroC Compiler.
+4. Presionar el ejecutable MicroC Compiler.
 
-5\. ¡Listo!
-
-
-
----
-
-
-
-\## Capturas de Pantalla
-
-
-
-\### Interfaz Inicial
-
-!\[Interfaz Inicial](docs/Inicial.png)
-
-
-
-\### Interfaz Principal
-
-!\[Interfaz Principal](docs/Principal.png)
-
-
-
-\### Menú File
-
-!\[Menu File](docs/File Menu.png)
-
-
-
-\### Edición Habilitada
-
-!\[Edición Habilitada](docs/Enable Editing.png)
-
-
-
-\### Salir
-
-!\[Salir](docs/Exit.png)
+5. ¡Listo!
 
 
 
@@ -130,7 +92,45 @@ git clone https://github.com/davidsmorales9/Compilador-MicroC-DavidsMorales.git
 
 
 
-\## Video Demostrativo
+## Capturas de Pantalla
+
+
+
+### Interfaz Inicial
+
+![Interfaz Inicial](docs/Inicial.png)
+
+
+
+### Interfaz Principal
+
+![Interfaz Principal](docs/Principal.png)
+
+
+
+### Menú File
+
+![Menu File](docs/File Menu.png)
+
+
+
+### Edición Habilitada
+
+![Edición Habilitada](docs/Enable Editing.png)
+
+
+
+### Salir
+
+![Salir](docs/Exit.png)
+
+
+
+---
+
+
+
+## Video Demostrativo
 
 
 
