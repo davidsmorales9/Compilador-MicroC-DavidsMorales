@@ -1,13 +1,16 @@
 ﻿namespace MicroC_Compiler
 {
-    //Se importan los espacios de nombres necesarios para la funcionalidad del formulario, manejo de archivos y procesos.
+    
     using System.Diagnostics;
     using System.IO;
     using System.Runtime.CompilerServices;
     using System.Threading.Channels;
 
+
     public partial class MicroC_Compiler : Form
     {
+
+
         //Instancias de las clases fileManager y Compiler para manejar la gestión de archivos y la compilación del código.
         fileManager gestor = new fileManager();
         Compiler compiler = new Compiler();
@@ -30,12 +33,12 @@
         //Si hay cambios sin guardar, se mostrará un mensaje de confirmación preguntando si desea guardar los cambios antes de salir.
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            
+
             if (!checkChanges)
                 return;
 
             DialogResult result = MessageBox.Show(
-                "There are unsaved changes. Do you want to save them before exiting?","Confirm",MessageBoxButtons.YesNoCancel,MessageBoxIcon.Warning);
+                "There are unsaved changes. Do you want to save them before exiting?", "Confirm", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
 
             if (result == DialogResult.Cancel)
             {
@@ -102,7 +105,7 @@
         {
             if (checkChanges)
             {
-                DialogResult result = MessageBox.Show("There are unsaved changes. Do you want to save them before exiting?", "Warning",MessageBoxButtons.YesNoCancel,MessageBoxIcon.Warning);
+                DialogResult result = MessageBox.Show("There are unsaved changes. Do you want to save them before exiting?", "Warning", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
 
                 if (result == DialogResult.Yes)
                 {
@@ -136,7 +139,7 @@
 
             if (checkChanges)
             {
-                DialogResult result = MessageBox.Show("There are unsaved changes. Do you want to save them before exiting?", "Warning",MessageBoxButtons.YesNoCancel,MessageBoxIcon.Warning);
+                DialogResult result = MessageBox.Show("There are unsaved changes. Do you want to save them before exiting?", "Warning", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
 
                 //Condicional para guardar los cambios antes de abrir un nuevo archivo
                 if (result == DialogResult.Yes)
@@ -186,7 +189,7 @@
         //Método para mostrar el archivo de ayuda "Pre-COMPILADOR.pdf"
         private void btnHelp(object sender, EventArgs e)
         {
-            string path = Path.Combine(Application.StartupPath, "Pre-COMPILADOR.pdf");
+            string path = Path.Combine(Application.StartupPath, "COMPILADOR AL 2026.pdf");
 
             if (File.Exists(path))
             {
@@ -198,7 +201,7 @@
             }
             else
             {
-                MessageBox.Show("The help file was not found.", "Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("The help file was not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -208,11 +211,54 @@
             if (txtEditor.ReadOnly)
             {
                 txtEditor.ReadOnly = false;
-                MessageBox.Show("Editing enabled. You can now modify the code.", "Editing enabled",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                MessageBox.Show("Editing enabled. You can now modify the code.", "Editing enabled", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                MessageBox.Show("Editing is now enabled.", "Editing now enabled", MessageBoxButtons.OK,MessageBoxIcon.Information);
+                MessageBox.Show("Editing is now enabled.", "Editing now enabled", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void rtbLineas_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void rtbCodigo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rtbCodigo_VScroll(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtLineNumbers_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSaveAs(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+
+            saveFileDialog.Filter = "Archivos C (*.c)|*.c";
+
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                currentPath = saveFileDialog.FileName;
+
+                File.WriteAllText(currentPath, txtEditor.Text);
+
+                this.Text = "MicroC Compiler - " + currentPath;
+
+                checkChanges = false;
+                bNew = false;
             }
         }
     }

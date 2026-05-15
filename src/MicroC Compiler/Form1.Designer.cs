@@ -34,6 +34,7 @@
             newToolStripMenuItem = new ToolStripMenuItem();
             openToolStripMenuItem = new ToolStripMenuItem();
             saveToolStripMenuItem = new ToolStripMenuItem();
+            saveAsToolStripMenuItem = new ToolStripMenuItem();
             exitToolStripMenuItem = new ToolStripMenuItem();
             btnEdit = new ToolStripMenuItem();
             btnEnableEditing = new ToolStripMenuItem();
@@ -58,7 +59,7 @@
             // fileToolStripMenuItem
             // 
             fileToolStripMenuItem.BackColor = SystemColors.ActiveCaptionText;
-            fileToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { newToolStripMenuItem, openToolStripMenuItem, saveToolStripMenuItem, exitToolStripMenuItem });
+            fileToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { newToolStripMenuItem, openToolStripMenuItem, saveToolStripMenuItem, saveAsToolStripMenuItem, exitToolStripMenuItem });
             fileToolStripMenuItem.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             fileToolStripMenuItem.ForeColor = SystemColors.ControlLightLight;
             fileToolStripMenuItem.Name = "fileToolStripMenuItem";
@@ -91,6 +92,16 @@
             saveToolStripMenuItem.Size = new Size(180, 22);
             saveToolStripMenuItem.Text = "Save";
             saveToolStripMenuItem.Click += btnSave;
+            // 
+            // saveAsToolStripMenuItem
+            // 
+            saveAsToolStripMenuItem.BackColor = SystemColors.ActiveCaptionText;
+            saveAsToolStripMenuItem.ForeColor = Color.White;
+            saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
+            saveAsToolStripMenuItem.Overflow = ToolStripItemOverflow.Always;
+            saveAsToolStripMenuItem.Size = new Size(180, 22);
+            saveAsToolStripMenuItem.Text = "Save As";
+            saveAsToolStripMenuItem.Click += btnSaveAs;
             // 
             // exitToolStripMenuItem
             // 
@@ -168,7 +179,6 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(855, 450);
             Controls.Add(txtOutput);
@@ -198,5 +208,6 @@
         private ToolStripMenuItem compileToolStripMenuItem;
         private ToolStripMenuItem helpToolStripMenuItem;
         private TextBox txtEditor;
+        private ToolStripMenuItem saveAsToolStripMenuItem;
     }
 }

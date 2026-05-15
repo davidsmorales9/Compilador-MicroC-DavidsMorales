@@ -11,10 +11,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="COMPILADOR AL 2026.pdf" />
     <None Remove="Pre-COMPILADOR.pdf" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="COMPILADOR AL 2026.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Pre-COMPILADOR.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

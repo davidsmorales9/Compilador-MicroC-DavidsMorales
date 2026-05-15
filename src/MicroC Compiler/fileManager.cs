@@ -12,11 +12,6 @@ namespace MicroC_Compiler
         public bool saved { get; private set; }
 
   
-        /*public string openFile()
-        {
-            // lógica de OpenFileDialog
-        }*/
-
         public void saveFile(string content)
         {
             // lógica de guardado
