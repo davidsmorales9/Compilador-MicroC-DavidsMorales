@@ -1,11 +1,11 @@
-# PRE-COMPILADOR MicroC
+# PRE-COMPILADOR v2.0 MicroC
 
 ## Información del Estudiante
 
 **Nombre:** Davids Morales  
 **Carné:** 202425503  
 **Curso:** Autómatas y Lenguajes  
-**Proyecto:** Compilador MicroC  
+**Proyecto:** Compilador MicroC (Segunda Parte) 
 
 ---
 
@@ -13,13 +13,15 @@
 
 Este proyecto consiste en el desarrollo de un Pre-Compilador MicroC implementado en C# utilizando Windows Forms, Visual Studio 2022.
 
-El sistema permite abrir archivos ".c", editar, guardar y crear nuevos archivos. Muestra el mensaje de compilación (función no desarrollada aún).
+El sistema permite abrir archivos ".c", editar, guardar y crear nuevos archivos. Al seguir los pasos indicados en la documentación y al presionar el botón compilar, mostrará este formato (Linea | Lexema | Token) cada uno de forma ordenada para comprender mejor como se separa cada elemento que se escribirá en el cuadro de texto izquierdo. 
 
 Entre las funcionalidades implementadas se encuentran:
 
 - Apertura y guardado de archivos (.c)
 - Bloqueo y desbloqueo de edición
 - Interfaz gráfica amigable para el usuario
+- Identificación de tokens
+- Análisis Léxico
 
 ---
 
@@ -28,7 +30,7 @@ Entre las funcionalidades implementadas se encuentran:
 - C#
 - .NET Framework
 - Windows Forms
-- Visual Studio 2022
+- Visual Studio 2022/2026
 - Git y GitHub
 
 ---
@@ -72,4 +74,4 @@ git clone https://github.com/davidsmorales9/Compilador-MicroC-DavidsMorales.git
 
 Enlace al video donde se muestran las funcionalidades implementadas:
 
-https://youtu.be/84Nf7JDW0Vc?si=mXmoUFdgd72gIT2d
+https://youtu.be/OA0EIpsrN6c?si=MEhY_39o2l3v7k5s
